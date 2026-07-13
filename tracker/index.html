@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>The 18-Week AI Engineer Roadmap</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Fundamentals → NLP → finetune · eval · serve → ship · 18 weeks</div>
+    <h1>The ML Engineer Roadmap</h1>
+    <p class="sub">Deep learning to NLP, a bit of DS, a solid backend spine — build-first, 18 weeks at ~30 h/wk. <span id="verdict" class="pill neutral">…</span></p>
+  </header>
+
+  <section class="startrow">
+    <span>Following this roadmap? Set your start date:</span>
+    <input type="date" id="startdate">
+    <span class="startnote mono" id="startnote"></span>
+  </section>
+
+  <section class="stats">
+    <div class="tile">
+      <div class="label">Items done</div>
+      <div class="big mono" id="st-items">0<small> / 0</small></div>
+      <div class="meter"><div class="fill" id="st-fill"></div><div class="tick" id="st-tick" style="left:0"></div></div>
+      <div class="note" id="st-items-note">tick = expected pace today</div>
+    </div>
+    <div class="tile">
+      <div class="label">Hours logged</div>
+      <div class="big mono" id="st-hours">0<small> / 0 expected</small></div>
+      <div class="note">log per week inside each card</div>
+    </div>
+    <div class="tile">
+      <div class="label">Prove-its · Gates</div>
+      <div class="big mono" id="st-prove">0/13<small> · 0/4</small></div>
+      <div class="note">Friday rebuilds from memory + monthly gates</div>
+    </div>
+    <div class="tile">
+      <div class="label">Where you are</div>
+      <div class="big mono" id="st-week">—</div>
+      <div class="note" id="st-week-note"></div>
+    </div>
+  </section>
+
+  <section class="attention" id="attention" hidden></section>
+
+  <section class="controls">
+    <button class="primary" id="btn-copy">Copy progress</button>
+    <button id="btn-import">Import progress</button>
+    <button id="btn-jump">Jump to current week</button>
+  </section>
+  <section class="iobox" id="iobox">
+    <div class="hint" id="io-hint"></div>
+    <textarea id="io-text" spellcheck="false"></textarea>
+    <div style="margin-top:8px; display:flex; gap:8px;">
+      <button class="primary" id="io-apply">Apply</button>
+      <button id="io-close">Close</button>
+    </div>
+  </section>
+
+  <section class="standing">
+    <span>Min viable week: 14h deep work + Friday prove-it — courses/papers slide to the buffer week</span>
+    <span><a href="https://anthropic.skilljar.com/" target="_blank" rel="noopener">Anthropic Academy</a></span>
+    <span><a href="https://cohere.com/llmu" target="_blank" rel="noopener">Cohere LLMU</a></span>
+    <span><a href="https://web.stanford.edu/class/cs224n/" target="_blank" rel="noopener">CS224n</a></span>
+    <span><a href="https://huggingface.co/learn/nlp-course" target="_blank" rel="noopener">HF NLP course</a></span>
+    <span>Ship every model to your HF Hub · write each prove-it up on a blog</span>
+    <span>GPU rentals for W9–13: <a href="https://www.runpod.io/" target="_blank" rel="noopener">RunPod</a> / <a href="https://lambdalabs.com" target="_blank" rel="noopener">Lambda</a></span>
+  </section>
+
+  <main id="months"></main>
+
+  <footer>
+    Your checkmarks, hours, and start date live in this browser only (localStorage) —
+    nothing is uploaded. <b>Copy progress</b> exports a portable blob: paste it on another
+    device via <b>Import progress</b>, or hand it to an assistant to sync. Every item links
+    straight to its source — the papers, courses, repos, and videos <em>are</em> the roadmap.
+  </footer>
+</div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
