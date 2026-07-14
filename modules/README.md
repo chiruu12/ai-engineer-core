@@ -8,7 +8,7 @@ graduates into a small, presentable project once its Friday prove-it passes.
 
 | # | Module | Week | Status | Project |
 |---|--------|------|--------|---------|
-| 01 | micrograd | 1 | not started | — |
+| 01 | [micrograd](01-micrograd/) | [1](../roadmap/month-1-foundations.md#week-1--autograd--math-bootcamp) | building | — |
 
 > Statuses: `not started` → `building` → `done` → `shipped` (promoted to a project and
 > write-up published). Add a row when you start each module.
