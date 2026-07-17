@@ -13,6 +13,9 @@ graduates into a small, presentable project once its Friday prove-it passes.
 > Statuses: `not started` → `building` → `done` → `shipped` (promoted to a project and
 > write-up published). Add a row when you start each module.
 
+Off-roadmap learnings — side experiments and detours that don't map to a week —
+live in [`extra/`](extra/), which keeps its own index.
+
 ## How a module becomes a project
 
 When the build works and the Friday prove-it passes, promote it:
